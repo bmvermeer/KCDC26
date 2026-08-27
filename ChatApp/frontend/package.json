@@ -1,0 +1,15 @@
+{
+  "name": "chat-frontend",
+  "version": "1.0.0",
+  "description": "Lightweight static server for the multi-channel chat client",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0",
+    "http-proxy-middleware": "^3.0.7",
+    "marked": "0.3.5"
+  }
+}

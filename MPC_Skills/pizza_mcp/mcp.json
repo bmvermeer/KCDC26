@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "Pizza MCP Server": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "mcp", "run", "pizza_mcp/pizza_concierge_mcp.py"]
+    },
+    "Delivery Tracker MCP Server": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "mcp", "run", "pizza_mcp/delivery_tracker_mcp.py"]
+    }
+  }
+}

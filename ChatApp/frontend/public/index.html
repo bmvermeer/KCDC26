@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multi-Channel Chat</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="login" class="login">
+        <form id="login-form">
+            <h1>Join the chat</h1>
+            <label>
+                Username
+                <input id="username" type="text" maxlength="24" required autocomplete="off">
+            </label>
+            <label>
+                Channel
+                <input id="channel" type="text" maxlength="32" value="general" required autocomplete="off">
+            </label>
+            <button type="submit">Join</button>
+        </form>
+    </div>
+
+    <div id="chat" class="chat hidden">
+        <aside class="sidebar">
+            <h2>Channels</h2>
+            <ul id="channel-list"></ul>
+            <form id="new-channel-form">
+                <input id="new-channel" type="text" maxlength="32" placeholder="new-channel" autocomplete="off">
+                <button type="submit">+</button>
+            </form>
+            <div class="me">Signed in as <strong id="me-username"></strong></div>
+        </aside>
+
+        <main class="main">
+            <header class="chat-header">
+                <span>#</span><span id="current-channel"></span>
+            </header>
+            <div id="messages" class="messages"></div>
+            <form id="message-form" class="message-form">
+                <input id="message-input" type="text" placeholder="Message (markdown supported)" autocomplete="off">
+                <button type="submit">Send</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="/vendor/marked/marked.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
