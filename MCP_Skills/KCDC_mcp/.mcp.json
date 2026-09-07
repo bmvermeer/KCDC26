@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "kcdc-schedule": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "server.js"
+      ],
+      "env": {}
+    }
+  }
+}
